@@ -15,9 +15,8 @@ public class Main {
         people.add(new Person("Annet", "Petrova Petrova", 29));
         people.add(new Person("Marina", "Petrova-Vasechkina-Gluxova", 50));
 
-        Predicate<Person> predicate = person -> {
-            return person.getAge() < 18;
-        };
+        Predicate<Person> predicate = person -> person.getAge() < 18;
+
 
         people.removeIf(predicate);
         System.out.println(people);
